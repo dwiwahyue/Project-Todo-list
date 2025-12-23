@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h2>To-do My List</h2>
+      <p>
+        Klick dua kali pada item untuk menandai mana yang sudah dikerjakan!!
+      </p>
+      <form>
+        <input type="text" id="input-box" placeholder="Masukan daftar list" />
+        <button type="button" id="button-add">Add</button>
+      </form>
+      <ol id="hasil"></ol>
+      <div class="btn">
+        <button
+          type="button"
+          id="btn-selesei"
+          onclick="clearCompletedToDoItems()"
+          class="pretty-button"
+        >
+          Selesei
+        </button>
+        <button
+          type="button"
+          id="btn-hapus"
+          onclick="emptyList()"
+          class="pretty-button"
+        >
+          Hapus List
+        </button>
+        <button
+          type="button"
+          id="btn-simpan"
+          onclick="saveList()"
+          class="pretty-button"
+        >
+          Simpan list
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
